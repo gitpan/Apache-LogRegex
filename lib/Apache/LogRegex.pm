@@ -3,7 +3,7 @@ package Apache::LogRegex;
 use strict;
 use warnings;
 
-our $VERSION = '1.2';
+our $VERSION = '1.3';
 
 sub new {
     my ( $class, $format ) = @_;
@@ -46,7 +46,7 @@ sub _parse_format {
         my $x = '(\S*)';
 
         if ($quotes) {
-			if($element eq '%r' or $element =~ m/{Referer}/) {
+			if($element eq '%r' or $element =~ m/{Referer}/ or $element =~ m/{User-Agent}/) {
 				$x = qr/"([^"\\]*(?:\\.[^"\\]*)*)"/;
 			}
 			else {
@@ -111,7 +111,7 @@ Apache::LogRegex - Parse a line from an Apache logfile into a hash
 
 =head1 VERSION
 
-This document refers to version 1.2 of Apache::LogRegex, released August 12th, 2004
+This document refers to version 1.3 of Apache::LogRegex, released May 8th 2006
 
 =head1 SYNOPSIS
 

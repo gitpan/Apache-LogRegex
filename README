@@ -1,6 +1,6 @@
 Apache::LogRegex - Parse a line from an Apache logfile into a hash
 
-This document refers to version 1.4 of Apache::LogRegex, released October 21st 2006
+This document refers to version 1.5 of Apache::LogRegex, released November 20th 2008
 
 Designed as a simple class to parse Apache log files. It will construct
 a regex that will parse the given log file format and can then parse
@@ -67,3 +67,9 @@ V1.2
 V1.3
 	  - Bug fix. Should allow for \" in the User-Agent. Thanks
 		to Graeme J Sweeney for spotting this.
+
+V1.4
+      - Bug fix. Changed the regex so that it could parse DOS
+        line endings when running on a Unix based system. Thanks
+        to Christian Glahn for reporting this one and supplying
+        the patch to fix it.

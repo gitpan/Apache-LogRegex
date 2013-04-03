@@ -1,12 +1,16 @@
---- #YAML:1.0
-name:                Apache-LogRegex
-version:             1.5
-abstract:            ~
-license:             ~
-author:              ~
-generated_by:        ExtUtils::MakeMaker version 6.44
-distribution_type:   module
-requires:     
+---
+abstract: 'Parse a line from an Apache logfile into a hash'
+author:
+  - 'Andrew Kirkpatrick <ubermonk@gmail.com>'
+  - 'Peter Hickman <peterhi@ntlworld.com>'
+build_requires: {}
+configure_requires:
+  ExtUtils::MakeMaker: 6.30
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 4.300032, CPAN::Meta::Converter version 2.120921'
+license: perl
 meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
-    version: 1.3
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Apache-LogRegex
+version: 1.5.1

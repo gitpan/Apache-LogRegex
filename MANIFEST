@@ -1,6 +1,8 @@
-lib/Apache/LogRegex.pm
-Makefile.PL
+LICENSE
 MANIFEST
-README
+META.yml
+Makefile.PL
+README.md
+dist.ini
+lib/Apache/LogRegex.pm
 t/simple.t
-META.yml                                 Module meta-data (added by MakeMaker)

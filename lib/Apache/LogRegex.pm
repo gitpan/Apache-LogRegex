@@ -1,9 +1,10 @@
 package Apache::LogRegex;
+{
+  $Apache::LogRegex::VERSION = '1.5.1';
+}
 
 use strict;
 use warnings;
-
-our $VERSION = '1.5';
 
 sub new {
     my ( $class, $format ) = @_;
@@ -115,7 +116,7 @@ Apache::LogRegex - Parse a line from an Apache logfile into a hash
 
 =head1 VERSION
 
-This document refers to version 1.5 of Apache::LogRegex, released November 20th 2008
+version 1.5.1
 
 =head1 SYNOPSIS
 
@@ -150,10 +151,12 @@ the format is '%a %t \"%r\" %s %b %T \"%{Referer}i\" ...' then the keys of
 the hash will be %a, %t, %r, %s, %b, %T and %{Referer}i.
 
 Should these key names be unusable, as I guess they probably are, then subclass
-and provide an override rename_this_name() method that can rename the keys 
+and provide an override rename_this_name() method that can rename the keys
 before they are added in the array of field names.
 
-=head2 Constructors and initialization
+=head1 SUBROUTINES/METHODS
+
+=head2 Constructor
 
 =over 4
 
@@ -192,14 +195,14 @@ The initial NAME is passed in and the method should return the new name.
 
 =back
 
-=head1 ENVIRONMENT
+=head1 CONFIGURATION AND ENVIRONMENT
 
 Perl 5
 
 =head1 DIAGNOSTICS
 
-The only problem I can foresee is the various custom time formats but
-providing that they are encased in '[' and ']' all should be fine.
+The various custom time formats could be problematic but providing that
+they are encased in '[' and ']' all should be fine.
 
 =over 4
 
@@ -247,12 +250,25 @@ None
 
 mod_log_config for a description of the Apache format commands
 
+=head1 THANKS
+
+Peter Hickman wrote the original module and maintained it for
+several years. He kindly passed maintainership on just prior to
+the 1.6 release. Most of the features of this module are the fruits of
+his work. If you find any bugs they are my doing.
+
 =head1 AUTHOR
 
-Peter Hickman (peterhi@ntlworld.com)
+Original code by Peter Hickman <peterhi@ntlworld.com>
 
-=head1 COPYRIGHT
+Additional code by Andrew Kirkpatrick <ubermonk@gmail.com>
 
-Copyright (c) 2004, Peter Hickman. All rights reserved. This module is
-free software. It may be used, redistributed and/or modified under the
-same terms as Perl itself.
+LICENSE AND COPYRIGHT
+---------------------
+
+Original code copyright (c) 2004-2006 Peter Hickman. All rights reserved.
+
+Additional code copyright (c) 2013 Andrew Kirkpatrick. All rights reserved.
+
+This module is free software. It may be used, redistributed and/or
+modified under the same terms as Perl itself.

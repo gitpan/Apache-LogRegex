@@ -13,4 +13,4 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Apache-LogRegex
-version: 1.51
+version: 1.52

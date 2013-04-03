@@ -1,6 +1,6 @@
 package Apache::LogRegex;
 {
-  $Apache::LogRegex::VERSION = '1.51';
+  $Apache::LogRegex::VERSION = '1.52';
 }
 
 use strict;
@@ -116,7 +116,7 @@ Apache::LogRegex - Parse a line from an Apache logfile into a hash
 
 =head1 VERSION
 
-version 1.51
+version 1.52
 
 =head1 SYNOPSIS
 
@@ -254,8 +254,8 @@ mod_log_config for a description of the Apache format commands
 
 Peter Hickman wrote the original module and maintained it for
 several years. He kindly passed maintainership on just prior to
-the 1.6 release. Most of the features of this module are the fruits of
-his work. If you find any bugs they are my doing.
+the 1.51 release. Most of the features of this module are the
+fruits of his work. If you find any bugs they are my doing.
 
 =head1 AUTHOR
 
@@ -263,8 +263,7 @@ Original code by Peter Hickman <peterhi@ntlworld.com>
 
 Additional code by Andrew Kirkpatrick <ubermonk@gmail.com>
 
-LICENSE AND COPYRIGHT
----------------------
+=head1 LICENSE AND COPYRIGHT
 
 Original code copyright (c) 2004-2006 Peter Hickman. All rights reserved.
 
@@ -272,3 +271,5 @@ Additional code copyright (c) 2013 Andrew Kirkpatrick. All rights reserved.
 
 This module is free software. It may be used, redistributed and/or
 modified under the same terms as Perl itself.
+
+=cut

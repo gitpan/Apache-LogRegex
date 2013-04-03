@@ -21,7 +21,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Apache::LogRegex",
   "PREREQ_PM" => {},
   "TEST_REQUIRES" => {},
-  "VERSION" => "1.5.1",
+  "VERSION" => "1.51",
   "test" => {
     "TESTS" => "t/*.t"
   }

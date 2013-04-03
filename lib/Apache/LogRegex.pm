@@ -1,6 +1,6 @@
 package Apache::LogRegex;
 {
-  $Apache::LogRegex::VERSION = '1.5.1';
+  $Apache::LogRegex::VERSION = '1.51';
 }
 
 use strict;
@@ -116,7 +116,7 @@ Apache::LogRegex - Parse a line from an Apache logfile into a hash
 
 =head1 VERSION
 
-version 1.5.1
+version 1.51
 
 =head1 SYNOPSIS
 
